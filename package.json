@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,14 +16,14 @@
     "url": "https://github.com/Anand1297/Test/issues"
   },
   "homepage": "https://github.com/Anand1297/Test#readme",
-  "dependencies": {
+   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "http-error": "0.0.6",
     "http-errors": "^1.7.3",
-    "mongoose": "^5.9.4",
+    "mongoose": "^5.8.11",
     "nodemon": "^2.0.2"
   }
 }
