@@ -45,6 +45,21 @@ res.send(post);
 };
 };
 
+const updateArray= async(req,res,next)=>{
+const id= req.body.id;
+const result= req.body.marks;
+console.log(id+" "+result)
+
+try{
+const post=await Post.updateOne({_id:id},{$addToSet:{Subject:[{marks:result}]}})
+res.send(post);
+}catch(err){
+res.send(err);
+}
+
+}
+
 module.exports.getPosts=getPosts;
 module.exports.createPost= createPost;
 module.exports.getPostById=getPostById;
+module.exports.updateArray=updateArray;

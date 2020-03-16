@@ -11,7 +11,8 @@ type :String,
 required :true,
 minlength:10,
 maxlength:100
-}
+},
+Subject:[{marks:{type:Number}}]
 });
 
 module.exports= mongoose.model("Demo",data);
